@@ -1,1 +1,1 @@
-Word Guess Game
+Alternative Bands Word Press Game
