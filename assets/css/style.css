@@ -1,0 +1,51 @@
+body {
+    background: url(../images/bandsbg.jpg);
+    width: 100%;
+}
+
+.container {
+    margin-top: 30px;
+    width: 600px;
+}
+
+.game-content {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    min-height: 500px;
+}
+
+#youlose-image, #youwin-image {
+    margin:auto;
+}
+
+main {
+    background-color: #000;
+    border-radius:10px;
+    padding: 20px;
+    max-width:70% !important;
+    min-height:500px;
+    margin-bottom:5%;
+    color: #d3d3d3;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#pressKeyTryAgain {
+    color: #FF1493;
+}
+
+#currentWord {
+    letter-spacing: 10px;
+    font-size: 25px;
+}
+
+h3 {
+    padding-top: 20px;
+    padding-bottom:5px;
+    font-family: 'Major Mono Display', monospace;
+    color: hotpink;
+}
+
+h4 {
+    padding-top: 20px;
+}

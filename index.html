@@ -1,30 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Word Guessing Game</title>
-    <script src="./assets/javascript/game.js"></script>
-
-
-
+    <title>Alternative Bands Guessing Game</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:200|Major+Mono+Display" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<body onload="getItem()">
-
-
-Press any key to get started!
-<br /><br />
-
-Wins:
-<br /><br />
-
-Current Word:<br />
-
-<br /><br />
-
-Number of Guesses:
-<br /><br />
-
-Letters Already Guessed:<br />
-
-    
+<body>
+    <header>
+        
+    </header>
+    <main class="container">
+    </div>
+        <table class="game-content">
+            <thead>
+                <tr>
+                    <th colspan="2"><span><img src="assets/images/altmix.gif"></span>
+                        <img id="youwin-image" src="assets/images/heckyes.png" alt="Winning Image" />
+                        <img id="youlose-image" src="assets/images/darn.png" alt="You Lose Image" />
+                        <h1 id="pressKeyTryAgain">Press any letter to continue</h1>
+                    </th>
+                </tr>
+            </thead>  
+            <tbody>
+                <tr>
+                    <td><h3 id="pressKeyStart">Press any letter to start</h3>
+                        <h4>Wins:</h4>  <div id="gameWins" ></div></div>  <h4>Losses:</h4>  <div id="gameLosses"></div>
+                        <h4>Current Word:</h4> <div id="currentWord"></div>
+                        <h4 style="padding-top:10px;">Guesses Left:</h4>  <div id="guessesLeft"></div>
+                        <h4>All Guesses:</h4>  <div id="userGuesses"></div>
+                    </td>
+                </tr>
+            </tbody>      
+        </table>
+    </main>    
+  
+    <!-- Linking JS -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>    
+    <script>
+        startGame();
+        refreshScreen();
+    </script>
 </body>
 </html>
